@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <!-- Customize the height of the track -->
+            <size android:height="8dp" />
+            <solid android:color="#CCC" /> <!-- Track color -->
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <!-- Customize the height of the progress -->
+                <size android:height="16dp" />
+                <solid android:color="#4CAF50" /> <!-- Progress color -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

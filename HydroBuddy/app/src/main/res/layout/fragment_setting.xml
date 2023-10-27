@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.SettingFragment"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_marginHorizontal="20dp"
+        app:strokeColor="@color/black"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/white">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_centerVertical="true"
+                android:text="Today's Goal"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"/>
+
+            <ImageView
+                android:id="@+id/subGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toStartOf="@id/goal"
+                android:src="@drawable/minus_circle_svgrepo_com" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="15"
+                android:layout_toStartOf="@id/addGoal"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:id="@+id/goal"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:id="@+id/addGoal"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_marginHorizontal="20dp"
+        app:strokeColor="@color/black"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/white">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:layout_centerVertical="true"
+                android:text="Reminder Frequency"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"/>
+
+            <ImageView
+                android:id="@+id/subReminder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toStartOf="@id/reminder"
+                android:src="@drawable/minus_circle_svgrepo_com" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="15"
+                android:layout_toStartOf="@id/addReminder"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:id="@+id/reminder"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:id="@+id/addReminder"/>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
